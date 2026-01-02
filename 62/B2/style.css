@@ -1,0 +1,38 @@
+body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+    gap: 10px;
+}
+
+.cir{
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(33, 33, 39);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir:nth-child(2n){
+    background-color: rgb(0, 217, 255);
+}
+.cir:nth-child(3n){
+    background-color: rgb(37, 80, 209);
+}
+.cir:nth-child(4n){
+    background-color:  rgb(0, 100, 255);
+}
+.cir:nth-child(5n){
+    background-color: rgb(0, 50, 255);
+}
