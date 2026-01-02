@@ -1,0 +1,82 @@
+.sin{
+    background-color: gainsboro;
+    width: 500px;
+    height: 200px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.red{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: lired 8s infinite;
+}
+.green{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: ligreen 8s infinite;
+}
+.yellow{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: liyellow 8s infinite;
+}
+
+@keyframes lired {
+    0%{
+        opacity: .2;
+    }
+    62.5%{
+        opacity: .2;
+    }
+    62.6%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes ligreen {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    50.1%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes liyellow {
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .2;
+    }
+    50.1%{
+        opacity: 1;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    62.6%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+

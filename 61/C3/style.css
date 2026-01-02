@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+
+#back{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ;
+}
+#text{
+    font-size: 200%;
+    transition: all .5s ;
+}
