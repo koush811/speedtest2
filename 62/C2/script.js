@@ -7,37 +7,38 @@ const buttons = document.getElementById('buttons')
 
 let temp = 0
 
-function step(){
-    steps.forEach((step, index) => {
-        step.classList.toggle('active', index === temp)
+
+function step() {
+    steps.forEach((step,index) => {
+        step.classList.toggle('active', temp === index)
     })
     if(temp === 2){
         finish.style.display = "block"
     }else{
         finish.style.display = "none"
     }
+    console.log(temp)
 }
 
-prev.addEventListener('click',()=>{
-    if(temp > 0){
-        temp--
+next.addEventListener('click',()=>{
+    if(temp<2){
+        temp++
         step()
     }
 })
 
-next.addEventListener('click',()=>{
-    if(temp < steps.length-1){
-        temp++
+prev.addEventListener('click',()=>{
+    if(temp>0){
+        temp--
         step()
     }
 })
 
 finish.addEventListener('click',()=>{
     steps.forEach(step => step.style.display = 'none')
-    complete.style.display = 'block'
-    buttons.style.display = 'none'
+    complete.style.display = "block"
+    buttons.style.display = "none"
 })
 
-
-
 step()
+

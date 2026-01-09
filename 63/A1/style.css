@@ -1,53 +1,52 @@
 body{
-    margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-color: black;
 }
 
-#lines{
-    position: relative;
+label{
     height: 200px;
     width: 50px;
-    cursor: pointer;
+    position: relative;
 }
 
 .line{
-    width: 50px;
-    height: 5px;
     background-color: white;
+    width: 50px;
+    height: 8px;
     position: absolute;
     transition: .5s;
 }
 
-.line.line1{
+.line1{
     top: 60%;
 }
-.line.line2{
+
+.line2{
     top: 50%;
 }
-.line.line3{
-    top: 40%
+
+.line3{
+    top: 40%;
 }
 
 #input{
     display: none;
 }
 
-#input:checked + #lines .line1{
+#input:checked + label .line1{
     transform: rotate(45deg);
     top: 50%;
-
 }
 
-#input:checked + #lines .line2{
+#input:checked + label .line2{
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+#input:checked + label .line3{
     transform: rotate(-45deg);
-    top: 50%;
-}
-
-#input:checked + #lines .line3{
-    transform: rotate(45deg);
     top: 50%;
 }
