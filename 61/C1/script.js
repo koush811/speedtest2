@@ -9,20 +9,17 @@ function Color(){
     )`
 }
 
-const origintext = text.textContent
-
 document.querySelector('button').addEventListener('click',()=>{
     const key = input.value
+    if(key == "")return
 
-    if(key === '')return;
-
-    let hilighttext = origintext
+    let hilighttext = text.textContent
 
     const regex = new RegExp(key,'g');
+
     hilighttext = hilighttext.replace(regex,(match)=>{
         const color = Color()
-        return `<span class="highlight" style = "background-color:${color};">${match}</span>`
+        return `<span style="background-color:${color};">${match}</span>`
     })
-    
     text.innerHTML = hilighttext
 })

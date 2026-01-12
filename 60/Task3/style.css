@@ -1,0 +1,22 @@
+.graph{
+    position: relative;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+    background-image: conic-gradient(
+        orange 50deg,
+        gray 50deg
+    );
+}
+
+.dgraph{
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
